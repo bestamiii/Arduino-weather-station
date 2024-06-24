@@ -157,7 +157,8 @@ schreibenSD();
   lcd.print(jetzt.hour());
   lcd.print(":");
   if (jetzt.minute() < 10) {
-   lcd.print("0"); // Add leading zero for single-digit minutes
+   lcd.print("0"); 
+// Add leading zero for single-digit minutes
   }
   lcd.print(jetzt.minute());
   lcd.print(":");
@@ -172,7 +173,8 @@ schreibenSD();
   // Display humidity and pressure on the fourth row
   lcd.setCursor(0, 3);
   lcd.print("H:");
-  lcd.print(humidity, 1); // Display one decimal place for humidity
+  lcd.print(humidity, 1);
+ // Display one decimal place for humidity
   lcd.print("%");
 
   lcd.print("Pres:");
